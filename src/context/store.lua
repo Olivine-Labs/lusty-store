@@ -2,7 +2,7 @@ local store = function(method)
   return function(collection, query, data)
     context.lusty:publish(
     { 'store', method, collection },
-    { query = query, data = data }
+    { method=method, query = query, data = data, collection=collection }
     )
   end
 end
