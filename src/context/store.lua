@@ -1,6 +1,6 @@
 local store = function(method)
   return function(collection, query, data)
-    context.lusty:publish(
+    return context.lusty:publish(
     { 'store', collection, method },
     { method=method, query = query, data = data, collection=collection }
     )
@@ -10,7 +10,6 @@ end
 context.store = setmetatable({}, {
   __index = function(self, key)
     local val = rawget(self, key)
-
     if not val then
       val = store(key)
       self[key] = val
