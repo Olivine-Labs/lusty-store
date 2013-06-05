@@ -13,11 +13,11 @@ local store = function(collection, method)
             ret[#ret+1] = row[j]
           end
         else
-          ret[#ret+1] = row
+          ret = row
+          break
         end
       end
     end
-    if #ret == 1 then ret = ret[1] end
     return ret
   end
 end
