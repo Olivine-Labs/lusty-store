@@ -20,6 +20,7 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["lusty-store.context.store"]  = "src/context/store.lua",
+    ["lusty-store.query"] = "src/query.lua",
+    ["lusty-store.context.store"]  = "src/context/store.lua"
   }
 }
