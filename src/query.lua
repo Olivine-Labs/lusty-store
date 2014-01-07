@@ -26,7 +26,8 @@ local ops = {
 
   ["and"] = clause,
   ["or"]  = clause,
-  limit   = clause
+  limit   = clause,
+  fields  = clause
 }
 
 --meta table functions, used by wrap
