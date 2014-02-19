@@ -1,8 +1,8 @@
 package = "lusty-store"
-version = "0.4-0"
+version = "0.5-0"
 source = {
-  url = "https://github.com/Olivine-Labs/lusty-store/archive/v0.4.tar.gz",
-  dir = "lusty-store-0.4"
+  url = "https://github.com/Olivine-Labs/lusty-store/archive/v0.5.tar.gz",
+  dir = "lusty-store-0.5"
 }
 description = {
   summary = "Persistence interface for lusty.",

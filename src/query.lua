@@ -15,6 +15,7 @@ end
 local ops = {
   eq      = clause,
   neq     = clause,
+  reg     = clause,
   gt      = clause,
   lt      = clause,
   lte     = clause,
