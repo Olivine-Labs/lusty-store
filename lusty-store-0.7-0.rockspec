@@ -1,8 +1,8 @@
 package = "lusty-store"
-version = "0.6-0"
+version = "0.7-0"
 source = {
-  url = "https://github.com/Olivine-Labs/lusty-store/archive/v0.6.tar.gz",
-  dir = "lusty-store-0.6"
+  url = "https://github.com/Olivine-Labs/lusty-store/archive/v0.7.tar.gz",
+  dir = "lusty-store-0.7"
 }
 description = {
   summary = "Persistence interface for lusty.",
@@ -20,7 +20,7 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["lusty-store.query"] = "src/query.lua",
-    ["lusty-store.context.store"]  = "src/context/store.lua"
+    ["lusty-store.query"] = "lusty-store/query.lua",
+    ["lusty-store.context.store"]  = "lusty-store/context/store.lua"
   }
 }

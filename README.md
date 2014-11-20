@@ -1,8 +1,6 @@
 lusty-store
 ===========
 
-Version 1.0
-
 add storage handler publising to your context. this will publish to whatever
 storage handlers need to respond (such as lusty-store-mongo).
 
